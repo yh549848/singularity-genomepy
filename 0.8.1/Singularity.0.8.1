@@ -1,0 +1,17 @@
+BootStrap: docker
+From: quay.io/biocontainers/genomepy:0.8.1--py_0
+
+%apprun genePredToBed
+  exec genePredToBed "${@}"
+
+%apprun genePredToGtf
+  exec genePredToGtf "${@}"
+
+%apprun bedToGenePred
+  exec bedToGenePred "${@}"
+
+%apprun gtfToGenePred
+  exec gtfToGenePred "${@}"
+
+%apprun gff3ToGenePred
+  exec gff3ToGenePred "${@}"
